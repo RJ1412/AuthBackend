@@ -11,7 +11,7 @@ app.use(urlencoded({extended:true}));
 app.use(cookieParser());
 
 app.use(cors({
-  origin: 'https://auth-frontend-9rss.vercel.app/',
+  origin: 'https://auth-frontend-9rss.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
