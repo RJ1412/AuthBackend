@@ -27,7 +27,7 @@ export const register = async (req, res) => {
 
         const otp = String(Math.floor(100000 + Math.random() * 900000));
         const hashedPassword = await bcrypt.hash(password, 10);
-        console.log(otp);
+        
         
         tempUsers.set(email, {
             username,
